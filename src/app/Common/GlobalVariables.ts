@@ -4,6 +4,6 @@ export enum lenguajes {
 }
 
 export enum frases {
-  es = "Cambiando al mundo una línea de código a la vez.",
-  en = "Changing the world one line of code at a time."
+  es = "Listo para el siguiente paso.",
+  en = "Ready for the next step."
 }

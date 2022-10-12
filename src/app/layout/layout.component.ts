@@ -12,7 +12,7 @@ export class LayoutComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  title = 'Camilo Castellanos';
+  title = 'Edwin Valencia';
 
   id = "tsparticles";
 

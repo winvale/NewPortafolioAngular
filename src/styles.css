@@ -3,11 +3,11 @@
 }
 
 html {
-    background: #348F50;
+    background: #114d23;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
+    background: linear-gradient(to top, #010f05f6, #d7dbd8);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #56B4D3, #348F50);
+    background: linear-gradient(to top, #010f05f6, #d7dbd8);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -17,15 +17,15 @@ html {
 
 .textoDetras {
     /* font-size: calc(1.95rem + 4.4vw)!important; */
-    color: #dee9ed!important;
+    color: #1a84aa!important;
     opacity: .7;
     font-weight: 610!important;
 }
 
 .transparente {
-    opacity: .6;
+    opacity: .8;
 }
 
 .carousel {
-    overflow: hidden;
+    overflow: inherit;
 }
