@@ -1,3 +1,4 @@
+//import { environment } from './../environments/environment';
 /*Rutas*/
 import { APP_ROUTING } from './app.routes'
 import { Router } from '@angular/router';
@@ -6,7 +7,7 @@ import { Router } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.prod';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,6 +28,10 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { LearningModule } from './Pages/Learning/learning.module';
 import { ProfileModule } from './Pages/Profile/profile.module';
+
+
+
+
 
 /**
  * Rutas de los archivos de los idiomas
