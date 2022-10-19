@@ -11,7 +11,7 @@
         },
         {
             "nombre": "Github",
-            "imagen": "https://i.postimg.cc/FszYnfHX/GitHub.webp",
+            "imagen": "https://i.postimg.cc/7hdXgdmP/icons8-github-200.png",
             "estado": 2
         },
         {
@@ -34,30 +34,21 @@
             "imagen": "https://i.postimg.cc/nLcJkWxF/Visual-Studio-Code.webp",
             "estado": 2
         },
-        {
-            "nombre": "Power BI",
-            "imagen": "https://i.postimg.cc/8PPmTBTF/PowerBi.webp",
-            "estado": 2
-        },
+        
         {
             "nombre": "Oracle SQL",
             "imagen": "https://i.postimg.cc/x1Fy4D2t/Oracle-SQL.webp",
-            "estado": 0
-        },
-        {
-            "nombre": "Ionic",
-            "imagen": "https://i.postimg.cc/X7PrMVrG/ionic.webp",
-            "estado": 1
+            "estado": 2
         },
         {
             "nombre": "Python",
-            "imagen": "https://i.postimg.cc/vmd1Zb5P/python.webp",
-            "estado": 1
+            "imagen": "https://i.postimg.cc/J0MRRYbn/python.webp",
+            "estado": 2
         },
         {
-            "nombre": "Colab",
-            "imagen": "https://i.postimg.cc/X7Y5SHxh/colab.webp",
-            "estado": 1
+            "nombre": "Bootstrap",
+            "imagen": "https://i.postimg.cc/ydJZFd59/icons8-bootstrap-240.png",
+            "estado": 2
         },
         {
             "nombre": "MongoDB",
@@ -67,7 +58,7 @@
         {
             "nombre": "Node JS",
             "imagen": "https://i.postimg.cc/Nj0kDGWK/nodejs.webp",
-            "estado": 1
+            "estado": 2
         },
         {
             "nombre": "Bulma CSS",
@@ -82,7 +73,7 @@
         {
             "nombre": "Firebase",
             "imagen": "https://i.postimg.cc/T2Cy9jGc/firebase.webp",
-            "estado": 1
+            "estado": 2
         }
     ]
 }
