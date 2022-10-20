@@ -1,16 +1,6 @@
 # Portafolio Angular
 
-En este proyecto se encuentra un portafolio realizado con Angular.
-Página de Pruebas: https://camilocastellanos.github.io/Portafolio-Angular/
-Página Final: https://devcastellanos.com/home 
-
-## Ejecutando las pruebas ⚙️
-
-El ambiente de pruebas es:  ttps://camilocastellanos.github.io/Portafolio-Angular/
-
-## Despliegue 📦
-
-El ambiente de producción para este portafolio es : ttps://devcastellanos.com/home 
+##Este proyecto esta creado para fines educativos y de libre comercio
 
 ## Construido con 🛠️
 
