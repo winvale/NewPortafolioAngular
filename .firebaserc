@@ -1,14 +1,5 @@
 {
   "projects": {
-    "default": "portafolioangular-4f64f"
-  },
-  "targets": {
-    "portafolioangular-4f64f": {
-      "hosting": {
-        "Portafolio-Angular": [
-          "portafolioangular-4f64f"
-        ]
-      }
-    }
+    "default": "edwin-valencia"
   }
 }
