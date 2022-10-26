@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Learning } from '../../models/Learning.model';
-import learningJSON from '../../../assets/JSON/Learning.json';
+import { Learning } from 'src/app/models/Learning.model';
+import learningJSON from 'src/assets/JSON/Learning.json';
+
 @Injectable({
   providedIn: 'root'
 })
