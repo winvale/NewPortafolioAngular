@@ -20,9 +20,23 @@
     "TITULO_EMPRESA": "Empresa:",
     "INFORMACION_CARGO": "Cargo:",
     "INFORMACION_FUNCIONES": "Funciones:",
-    "INFORMACION_FECHA_INICIO_FECHA_FIN": "Fecha Inicio/Fin",
+    "INFORMACION_PROYECTOS":"Proyectos:",
+    "INFORMACION_FECHA_INICIO_FECHA_FIN": "Fecha Inicio/Fin:",
+
+    "TITULO_EMPRESA_USER": "MORASURCO SAS",
+    "INFORMACION_CARGO_USER": "Auxiliar de sistemas y contabilidad",
+    "INFORMACION_FUNCIONES_USER": "Varios oficios contables y sistematicos, Lider de producion de fabrica",
+    "INFORMACION_PROYECTOS_USER": "https://www.morasurcocafepuro.com/",
+    "INFORMACION_FECHA_INICIO_FECHA_FIN_USER": "2018-2020",
 
 
+    "TITULO_EMPRESA_USER1": "Startups INVENTAS-APP",
+    "INFORMACION_CARGO_USER1": "Cofundador",
+    "INFORMACION_CARGO_USER1.1": "Desarrollador",
+    "INFORMACION_CARGO_USER1.2": "Product Owner",
+    "INFORMACION_FUNCIONES_USER1": "Logica del negocio, Desarrollador, Comunicación continua con el cliente",
+    "INFORMACION_PROYECTOS_USER1": "https://inventas-app.netlify.app/",
+    "INFORMACION_FECHA_INICIO_FECHA_FIN_USER1": "2020-2022",
 
     "INFORMACION_NOMBRE_PROFILE": "Edwin Valencia",
     "TITULO_RESIDENCIA_PROFILE": "Residencia:",
