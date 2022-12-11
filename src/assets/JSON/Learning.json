@@ -1,27 +1,27 @@
 {
     "aprendiendo": [{
-            "titulo": "Curso de MongoDB Aprende bases de datos NoSQL + API NodeJS",
-            "imagen": "https://i.postimg.cc/d19hgrCw/Curso-Mongo.webp"
+            "titulo": "Strping Boot",
+            "imagen": "https://drive.google.com/uc?export=view&id=1OZH6fCMcRe7ApkttBgmxpwEnFV8tQSu8"
         },
         {
             "titulo": "Matemáticas Aplicadas a la Ciencia de Datos",
-            "imagen": "https://i.postimg.cc/4y6j6vYk/Matem-ticas-Aplicadas-a-la-Ciencia-de-Datos-pages-to-jpg-0001.webp"
+            "imagen": "https://drive.google.com/uc?export=view&id"
         },
         {
             "titulo": "Fundamentos de Typescript",
-            "imagen": "https://i.postimg.cc/D0ySh0Qs/diploma-fundamentos-typescript.webp"
+            "imagen": "https://drive.google.com/uc?export=view&id"
         },
         {
             "titulo": "Curso Profesional de Git y GitHub",
-            "imagen": "https://i.postimg.cc/Mp5MsgCX/diploma-git-github.webp"
+            "imagen": "https://drive.google.com/uc?export=view&id"
         },
         {
             "titulo": "Markdown Desde Cero",
-            "imagen": "https://i.postimg.cc/dVzZCqvP/certificado-curso-markdown.webp"
+            "imagen": "https://drive.google.com/uc?export=view&id"
         },
         {
             "titulo": "Aprende Typescript",
-            "imagen": "https://i.postimg.cc/s2hSHMKg/Aprende-Type-Script.webp"
+            "imagen": "https://drive.google.com/uc?export=view&id"
         }
     ]
 }
