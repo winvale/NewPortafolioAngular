@@ -8,20 +8,32 @@
             "imagen": "https://drive.google.com/uc?export=view&id=1NBro8TtSAisGRlEcCF3h66FzmHTFOTXP"
         },
         {
-            "titulo": "Fundamentos de Typescript",
-            "imagen": "https://drive.google.com/uc?export=view&id"
+            "titulo": "Node.Js",
+            "imagen": "https://drive.google.com/uc?export=view&id=1PRxGRcRyTjwHmtkNwiNjO4tEWNee4s72"
         },
         {
-            "titulo": "Curso Profesional de Git y GitHub",
-            "imagen": "https://drive.google.com/uc?export=view&id"
+            "titulo": "Sistema en Java y MySQL",
+            "imagen": "https://drive.google.com/uc?export=view&id=1dlts0sUj7WAw4xHXZtFuMflATWbuSI4g"
         },
         {
-            "titulo": "Markdown Desde Cero",
-            "imagen": "https://drive.google.com/uc?export=view&id"
+            "titulo": "Curso Básico de SQL Server y Introducción a Power BI",
+            "imagen": "https://drive.google.com/uc?export=view&id=1wx6k27SaBkLphuAeBlywh6Ec8vRmvvY9"
         },
         {
-            "titulo": "Aprende Typescript",
-            "imagen": "https://drive.google.com/uc?export=view&id"
+            "titulo": "JavaScript Algoritmos",
+            "imagen": "https://drive.google.com/uc?export=view&id=1V2I_G9mCXDdYgY93c_D34eWEbZoQlfDN"
+        },
+        {
+            "titulo": "AWS",
+            "imagen": "https://drive.google.com/uc?export=view&id=1qfW3VVr0-Hw46xv1AVSMnolS7XQ9aXjd"
+        },
+        {
+            "titulo": "SENA contabilidad",
+            "imagen": "https://drive.google.com/uc?export=view&id=1qnsA28H5MOeEg5xkmAKcXlkJD8yIsT6u"
+        },
+        {
+            "titulo": "Rensponsive",
+            "imagen": "https://drive.google.com/uc?export=view&id=11KBMb4o1tQ3uqo6L2t6pnZyJKARWxTEd"
         }
     ]
 }
