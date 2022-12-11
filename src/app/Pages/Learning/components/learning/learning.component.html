@@ -20,6 +20,7 @@
               alt="Edwin Valencia - {{ item.titulo }}"
             />
           </figure>
+          <h3>{{ item.titulo }}</h3>
         </div>
       </div>
     </div>
@@ -29,12 +30,13 @@
   <div class="container is-hidden-desktop">
     <mzd-timeline>
       <mzd-timeline-content [border]="true">
-        <figure class="image is-1by1">
+        Certificados
+        <!-- <figure class="image is-1by1">
           <img
             src="https://i.postimg.cc/Gh4pxZXc/Cursos-Online.webp"
             alt="Edwin Valencia - Learning"
           />
-        </figure>
+        </figure>-->
       </mzd-timeline-content>
       <mzd-timeline-content [border]="true" *ngFor="let item of listaTitulos">
         <div class="">

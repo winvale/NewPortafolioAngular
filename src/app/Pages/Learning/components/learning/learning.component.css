@@ -20,3 +20,7 @@
     -ms-transform: scale(2);
     /* IE9 */
 }
+
+h3{
+    color: aliceblue !important;
+}
