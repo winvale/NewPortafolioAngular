@@ -11,11 +11,11 @@
     "PERFIL_NAVBAR": "Profile",
     "TRABAJOS_NAVBAR": "Working Experience",
     "PROYECTOS_PERSONALES_NAVBAR": "Personal Projects",
-    "APRENDIENDO_NAVBAR": "Continue Learning",
+    "APRENDIENDO_NAVBAR": "Learning",
     "TITULO1_PROFILE": "My Information",
     "SUBTITULO1_PROFILE": "Profile",
     "TITULO_NOMBRE_PROFILE": "Name:",
-    "INFORMACION_NOMBRE_PROFILE": " Edwin Valencia",
+    "INFORMACION_NOMBRE_PROFILE": "Edwin Valencia",
 
     "TITULO_EMPRESA": "EMPRESA:",
     "INFORMACION_CARGO": "CARGO",
@@ -60,6 +60,6 @@
     "SUBTITULO_WORK": "My Experience",
     "TITULO_PROJECT": "Personal Projects",
     "SUBTITULO_PROJECT": "Creations",
-    "TITULO_LEARNING": "Continue Learning",
+    "TITULO_LEARNING": "Learning",
     "SUBTITULO_LEARNING": "Knowledge"
 }

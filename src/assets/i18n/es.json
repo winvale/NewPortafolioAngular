@@ -11,7 +11,7 @@
     "PERFIL_NAVBAR": "Perfil",
     "TRABAJOS_NAVBAR": "Experiencia Laboral",
     "PROYECTOS_PERSONALES_NAVBAR": "Proyectos Personales",
-    "APRENDIENDO_NAVBAR": "Seguir Aprendiendo",
+    "APRENDIENDO_NAVBAR": "Aprendizajes",
     "TITULO1_PROFILE": "Mi Información",
     "SUBTITULO1_PROFILE": "Perfil",
     "TITULO_NOMBRE_PROFILE": "Nombre:",
@@ -62,6 +62,6 @@
     "SUBTITULO_WORK": "Mi Experiencia",
     "TITULO_PROJECT": "Proyectos Personales",
     "SUBTITULO_PROJECT": "Creaciones",
-    "TITULO_LEARNING": "Seguir Aprendiendo",
+    "TITULO_LEARNING": "Aprendizajes",
     "SUBTITULO_LEARNING": "Conocimiento"
 }
