@@ -1,39 +1,38 @@
-@import '../../../styles.scss';
+@use 'sass:color';
+@use 'sass:math';
+@import '../../../styles/_variables.scss';
 
 .footer {
-  background-color: #f5f5f5;
-  padding: 3rem 1.5rem;
-  border-top: 1px solid #eaeaea;
+  background-color: $light-color;
+  padding: 2rem 0;
   
-  strong {
-    color: $primary-color;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
   
-  .social-icons {
+  .social-links {
     display: flex;
-    justify-content: flex-end;
     gap: 1rem;
     
-    @media screen and (max-width: 768px) {
-      justify-content: center;
-      margin-top: 1rem;
-    }
-    
-    .icon-link {
+    .icon {
       color: $dark-color;
-      font-size: 1.25rem;
-      transition: all 0.3s ease;
+      transition: color 0.3s ease;
       
       &:hover {
         color: $primary-color;
-        transform: translateY(-3px);
       }
     }
   }
   
   .copyright {
+    color: $grey-color;
     font-size: 0.9rem;
-    color: #777;
-    margin-top: 2rem;
   }
 }

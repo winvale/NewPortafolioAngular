@@ -1,8 +1,10 @@
-@import '../../../styles.scss';
+@use 'sass:color';
+@use 'sass:math';
+@import '../../../styles/_variables.scss';
 
 .navbar {
   transition: all 0.3s ease;
-  background-color: #ffffff;
+  background-color: $white-color;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
   
   &.is-scrolled {
@@ -19,31 +21,31 @@
     
     .navbar-item {
       font-weight: 600;
-      color: #363636;
+      color: $dark-color;
       
       &:hover {
-        color: #3273dc;
+        color: $primary-color;
       }
     }
   }
   
   .navbar-item {
-    color: #4a4a4a;
+    color: $dark-color;
     transition: color 0.3s ease;
     
     &:hover {
-      color: #3273dc;
+      color: $primary-color;
     }
     
     &.is-active {
-      color: #3273dc;
+      color: $primary-color;
       font-weight: 500;
     }
   }
   
   .navbar-menu {
-    @media screen and (max-width: 1023px) {
-      background-color: #ffffff;
+    @media screen and (max-width: $tablet) {
+      background-color: $white-color;
       box-shadow: 0 4px 6px rgba(10, 10, 10, 0.1);
       
       .navbar-item {
@@ -57,7 +59,7 @@
   }
   
   .navbar-burger {
-    color: #4a4a4a;
+    color: $dark-color;
     
     &:hover {
       background-color: rgba(0, 0, 0, 0.05);
