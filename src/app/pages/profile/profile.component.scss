@@ -1,0 +1,221 @@
+@import '../../../styles.scss';
+@import '../../styles/variables';
+
+.profile-section {
+  padding: 6rem 1.5rem 4rem;
+  background-color: $white-color;
+  
+  .profile-image {
+    img {
+      border: 5px solid white;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: all 0.5s ease;
+      
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+  
+  .title {
+    position: relative;
+    display: inline-block;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background-color: $primary-color;
+    }
+  }
+  
+  .box {
+    transition: all 0.3s ease;
+    background-color: $white-color;
+    box-shadow: $shadow-small;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: $shadow-medium;
+    }
+  }
+  
+  .service-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    .content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      
+      h4 {
+        margin-bottom: $spacing-large;
+        color: $dark-color;
+      }
+      
+      .image {
+        margin-bottom: $spacing-large;
+        overflow: hidden;
+        border-radius: 8px;
+        
+        img {
+          transition: transform 0.3s ease;
+          
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+      
+      p {
+        flex-grow: 1;
+        line-height: 1.6;
+        color: $grey-color;
+      }
+    }
+  }
+  
+  .table {
+    background-color: transparent;
+    
+    td {
+      vertical-align: middle;
+      border: none;
+      padding: $spacing-medium;
+      color: $dark-color;
+      
+      &:first-child {
+        width: 30%;
+        font-weight: $font-weight-bold;
+        color: $grey-color;
+      }
+    }
+  }
+  
+  .button {
+    transition: all 0.3s ease;
+    
+    &.is-info {
+      background-color: $primary-color;
+      color: $white-color;
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: $shadow-medium;
+        background-color: darken($primary-color, 5%);
+      }
+    }
+    
+    .icon {
+      margin-right: $spacing-small;
+    }
+  }
+}
+
+.skills-section {
+  padding: 5rem 1.5rem;
+  
+  .skill-item {
+    margin-bottom: 1.5rem;
+    
+    .skill-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      
+      .skill-name {
+        font-weight: 600;
+      }
+      
+      .skill-percentage {
+        color: $primary-color;
+        font-weight: 600;
+      }
+    }
+    
+    .progress-container {
+      height: 8px;
+      background-color: #e9ecef;
+      border-radius: 4px;
+      overflow: hidden;
+      
+      .progress-bar {
+        height: 100%;
+        background-color: $primary-color;
+        border-radius: 4px;
+        transition: width 1s ease-in-out;
+      }
+    }
+  }
+}
+
+.education-section {
+  padding: 5rem 1.5rem;
+  
+  .timeline {
+    position: relative;
+    margin: 2rem auto;
+    max-width: 700px;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 18px;
+      height: 100%;
+      width: 2px;
+      background-color: #e9ecef;
+    }
+    
+    .timeline-item {
+      position: relative;
+      padding-left: 45px;
+      margin-bottom: 2.5rem;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      .timeline-marker {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        border: 3px solid white;
+        box-shadow: 0 0 0 3px rgba($primary-color, 0.2);
+      }
+      
+      .timeline-content {
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 6px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .heading {
+          color: $primary-color;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+        }
+        
+        .title {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

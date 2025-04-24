@@ -1,0 +1,67 @@
+<section class="hero is-fullheight-with-navbar has-background-light">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-6" data-aos="fade-right" data-aos-duration="1000">
+          <h1 class="title is-1 has-text-dark has-text-weight-bold">
+            Hola, soy <span class="has-text-info">Edwin Valencia</span>
+          </h1>
+          <h2 class="subtitle is-3 mb-5 has-text-dark">
+            Desarrollador Full Stack
+          </h2>
+          <p class="is-size-5 mb-5 has-text-grey-dark">
+            Especialista en desarrollo de aplicaciones web modernas y soluciones empresariales. 
+            Con experiencia en tecnologías como Angular, .NET Core, y bases de datos SQL Server.
+          </p>
+          <div class="buttons">
+            <a href="#profile" class="button is-info is-medium">
+              <span class="icon">
+                <i class="fas fa-user"></i>
+              </span>
+              <span>Ver Perfil</span>
+            </a>
+            <a href="#projects" class="button is-light is-medium">
+              <span class="icon">
+                <i class="fas fa-code"></i>
+              </span>
+              <span>Ver Proyectos</span>
+            </a>
+          </div>
+        </div>
+        <div class="column is-6" data-aos="fade-left" data-aos-duration="1000">
+          <figure class="image">
+            <img src="assets/images/hero-image.svg" alt="Desarrollo Web">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section has-background-white" id="technologies">
+  <div class="container">
+    <h2 class="title is-2 has-text-centered has-text-dark mb-6" data-aos="fade-up">
+      Tecnologías
+    </h2>
+    <app-tools-languages></app-tools-languages>
+  </div>
+</section>
+
+<section class="section cta-section has-background-light">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-8" data-aos="fade-right">
+        <h2 class="title is-3 mb-4 has-text-dark">¿Interesado en trabajar juntos?</h2>
+        <p class="is-size-5 has-text-grey-dark">Estoy disponible para proyectos freelance y oportunidades laborales.</p>
+      </div>
+      <div class="column is-4 has-text-right" data-aos="fade-left">
+        <button class="button is-info is-medium" (click)="navigateTo('/profile')">
+          <span>Contáctame</span>
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

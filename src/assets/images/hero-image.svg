@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="500" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo con gradiente -->  
+  <defs>
+    <linearGradient id="paint0_linear" x1="300" y1="0" x2="300" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366F1" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Círculo de fondo -->  
+  <circle cx="300" cy="250" r="240" fill="url(#paint0_linear)"/>
+  
+  <!-- Elementos decorativos - Círculos pequeños -->  
+  <circle cx="150" cy="100" r="10" fill="#6366F1" opacity="0.2"/>
+  <circle cx="450" cy="150" r="15" fill="#6366F1" opacity="0.2"/>
+  <circle cx="100" cy="350" r="12" fill="#6366F1" opacity="0.2"/>
+  <circle cx="500" cy="350" r="8" fill="#6366F1" opacity="0.2"/>
+  
+  <!-- Elementos decorativos - Líneas -->  
+  <path d="M120 120 L180 180" stroke="#6366F1" stroke-width="2" opacity="0.3"/>
+  <path d="M420 120 L360 180" stroke="#6366F1" stroke-width="2" opacity="0.3"/>
+  <path d="M120 380 L180 320" stroke="#6366F1" stroke-width="2" opacity="0.3"/>
+  <path d="M420 380 L360 320" stroke="#6366F1" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Laptop -->  
+  <rect x="200" y="200" width="200" height="130" rx="10" fill="#2D3748"/>
+  <rect x="210" y="210" width="180" height="110" rx="5" fill="#A3BFFA"/>
+  <rect x="180" y="330" width="240" height="15" rx="7.5" fill="#2D3748"/>
+  
+  <!-- Código en la pantalla -->  
+  <rect x="220" y="220" width="100" height="10" rx="5" fill="#6366F1" opacity="0.7"/>
+  <rect x="220" y="240" width="160" height="10" rx="5" fill="#6366F1" opacity="0.5"/>
+  <rect x="220" y="260" width="130" height="10" rx="5" fill="#6366F1" opacity="0.7"/>
+  <rect x="220" y="280" width="140" height="10" rx="5" fill="#6366F1" opacity="0.5"/>
+  <rect x="220" y="300" width="80" height="10" rx="5" fill="#6366F1" opacity="0.7"/>
+  
+  <!-- Elementos flotantes - Iconos de tecnología -->  
+  <!-- Angular -->  
+  <circle cx="120" cy="220" r="25" fill="#DD0031" opacity="0.8"/>
+  <text x="120" y="225" font-family="Arial" font-size="12" text-anchor="middle" fill="white">A</text>
+  
+  <!-- React -->  
+  <circle cx="480" cy="220" r="25" fill="#61DAFB" opacity="0.8"/>
+  <text x="480" y="225" font-family="Arial" font-size="12" text-anchor="middle" fill="white">R</text>
+  
+  <!-- Node.js -->  
+  <circle cx="180" cy="130" r="25" fill="#68A063" opacity="0.8"/>
+  <text x="180" y="135" font-family="Arial" font-size="12" text-anchor="middle" fill="white">N</text>
+  
+  <!-- TypeScript -->  
+  <circle cx="420" cy="130" r="25" fill="#007ACC" opacity="0.8"/>
+  <text x="420" y="135" font-family="Arial" font-size="12" text-anchor="middle" fill="white">TS</text>
+  
+  <!-- HTML5 -->  
+  <circle cx="180" cy="370" r="25" fill="#E34F26" opacity="0.8"/>
+  <text x="180" y="375" font-family="Arial" font-size="12" text-anchor="middle" fill="white">H5</text>
+  
+  <!-- CSS3 -->  
+  <circle cx="420" cy="370" r="25" fill="#1572B6" opacity="0.8"/>
+  <text x="420" y="375" font-family="Arial" font-size="12" text-anchor="middle" fill="white">CSS</text>
+</svg>

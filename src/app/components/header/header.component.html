@@ -1,0 +1,29 @@
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" [class.is-active]="isActive">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" routerLink="/home">
+        <strong>Edwin Valencia</strong>
+      </a>
+
+      <a role="button" 
+         class="navbar-burger" 
+         [class.is-active]="isMenuOpen" 
+         (click)="toggleMenu()"
+         aria-label="menu" 
+         aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" [class.is-active]="isMenuOpen">
+      <div class="navbar-end">
+        <a class="navbar-item" routerLink="/home" routerLinkActive="is-active">Inicio</a>
+        <a class="navbar-item" routerLink="/profile" routerLinkActive="is-active">Perfil</a>
+        <a class="navbar-item" routerLink="/projects" routerLinkActive="is-active">Proyectos</a>
+        <a class="navbar-item" routerLink="/work" routerLinkActive="is-active">Experiencia</a>
+      </div>
+    </div>
+  </div>
+</nav>

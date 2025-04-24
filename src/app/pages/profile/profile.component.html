@@ -1,0 +1,147 @@
+<section class="section profile-section">
+  <div class="container">
+    <h2 class="title is-2 has-text-centered mb-6" data-aos="fade-up">
+      Perfil Profesional
+    </h2>
+    
+    <div class="columns is-multiline">
+      <!-- Información Personal -->
+      <div class="column is-12" data-aos="fade-up">
+        <div class="box">
+          <table class="table is-fullwidth">
+            <tbody>
+              <tr>
+                <td class="has-text-weight-bold">Nombre:</td>
+                <td>Edwin Valencia</td>
+              </tr>
+              <tr>
+                <td class="has-text-weight-bold">Residencia:</td>
+                <td>Bogotá, Colombia</td>
+              </tr>
+              <tr>
+                <td class="has-text-weight-bold">Profesión:</td>
+                <td>Ingeniero de Sistemas</td>
+              </tr>
+              <tr>
+                <td class="has-text-weight-bold">Estudios de Postgrado:</td>
+                <td>
+                  Especialización en Ingeniería de Software<br>
+                  Especialización en Arquitectura de Software<br>
+                  Máster en Desarrollo de Software
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Servicios -->
+      <div class="column is-12">
+        <h3 class="title is-3 has-text-centered mt-6 mb-5" data-aos="fade-up">
+          Servicios
+        </h3>
+        
+        <div class="columns is-multiline">
+          <!-- Frontend -->
+          <div class="column is-6" data-aos="fade-right">
+            <div class="box service-box">
+              <div class="content">
+                <h4 class="title is-4 has-text-centered">Desarrollo Frontend</h4>
+                <figure class="image mb-4">
+                  <img src="https://i.postimg.cc/vmsHMDbB/FrontEnd.webp" alt="Frontend Development">
+                </figure>
+                <p>
+                  Desarrollo de aplicaciones web modernas utilizando Angular y React. 
+                  Implementación de interfaces de usuario responsivas y optimización del rendimiento.
+                  Experiencia en TypeScript, SASS y herramientas modernas de desarrollo frontend.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="column is-6" data-aos="fade-left">
+            <div class="box service-box">
+              <div class="content">
+                <h4 class="title is-4 has-text-centered">Desarrollo Backend</h4>
+                <figure class="image mb-4">
+                  <img src="https://i.postimg.cc/rsnKwTgH/BackEnd.webp" alt="Backend Development">
+                </figure>
+                <p>
+                  Desarrollo de APIs y servicios web con .NET Core y Node.js. 
+                  Implementación de arquitecturas escalables y seguras.
+                  Experiencia en SQL Server, MongoDB y diseño de bases de datos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CV Download -->
+      <div class="column is-12 has-text-centered mt-6" data-aos="fade-up">
+        <button class="button is-primary is-large" (click)="downloadCV()">
+          <span class="icon">
+            <i class="fas fa-download"></i>
+          </span>
+          <span>Descargar CV</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section skills-section has-background-light">
+  <div class="container">
+    <h2 class="title is-2 has-text-centered mb-6" data-aos="fade-up">
+      Mis Habilidades
+    </h2>
+    <div class="columns is-multiline">
+      <div class="column is-6" *ngFor="let skill of skills" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-item">
+          <div class="skill-info">
+            <span class="skill-name">{{skill.name}}</span>
+            <span class="skill-percentage">{{skill.level}}%</span>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" [style.width.%]="skill.level"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section education-section">
+  <div class="container">
+    <h2 class="title is-2 has-text-centered mb-6" data-aos="fade-up">
+      Educación y Certificaciones
+    </h2>
+    <div class="timeline" data-aos="fade-up" data-aos-delay="200">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="heading">2018 - 2022</p>
+          <h3 class="title is-4">Ingeniería en Sistemas Computacionales</h3>
+          <p>Universidad Nacional de Colombia</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="heading">2020</p>
+          <h3 class="title is-4">Certificación en Desarrollo Web Full Stack</h3>
+          <p>Platzi</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="heading">2021</p>
+          <h3 class="title is-4">Certificación en Angular</h3>
+          <p>Udemy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

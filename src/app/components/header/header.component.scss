@@ -1,0 +1,70 @@
+@import '../../../styles.scss';
+
+.navbar {
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+  
+  &.is-scrolled {
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 6px rgba(10, 10, 10, 0.1);
+  }
+  
+  .navbar-brand {
+    strong {
+      font-size: 1.25rem;
+      color: $primary-color;
+      letter-spacing: 1px;
+    }
+    
+    .navbar-item {
+      font-weight: 600;
+      color: #363636;
+      
+      &:hover {
+        color: #3273dc;
+      }
+    }
+  }
+  
+  .navbar-item {
+    color: #4a4a4a;
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: #3273dc;
+    }
+    
+    &.is-active {
+      color: #3273dc;
+      font-weight: 500;
+    }
+  }
+  
+  .navbar-menu {
+    @media screen and (max-width: 1023px) {
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px rgba(10, 10, 10, 0.1);
+      
+      .navbar-item {
+        padding: 0.75rem 1.5rem;
+        
+        &.is-active {
+          background-color: rgba($primary-color, 0.1);
+        }
+      }
+    }
+  }
+  
+  .navbar-burger {
+    color: #4a4a4a;
+    
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    span {
+      height: 2px;
+    }
+  }
+}

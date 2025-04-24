@@ -1,0 +1,26 @@
+<section class="section work-section">
+  <div class="container">
+    <h2 class="title is-2 has-text-centered mb-6" data-aos="fade-up">
+      Experiencia Laboral
+    </h2>
+
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let job of workExperience" data-aos="fade-up">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="box">
+            <h3 class="title is-4">{{job.position}}</h3>
+            <h4 class="subtitle is-5 has-text-primary">{{job.company}}</h4>
+            <p class="period mb-3">{{job.period}}</p>
+            <p class="description mb-4">{{job.description}}</p>
+            <div class="tags">
+              <span class="tag is-info" *ngFor="let tech of job.technologies">
+                {{tech}}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

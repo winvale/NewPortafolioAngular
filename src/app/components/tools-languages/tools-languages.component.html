@@ -1,0 +1,10 @@
+<div class="columns is-multiline" data-aos="fade-up">
+  <div class="column is-2-desktop is-3-tablet is-4-mobile" *ngFor="let tech of technologies">
+    <div class="box has-text-centered">
+      <span class="icon is-large">
+        <i [class]="tech.icon" [style.color]="tech.color"></i>
+      </span>
+      <p class="mt-2">{{ tech.name }}</p>
+    </div>
+  </div>
+</div>
