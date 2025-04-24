@@ -1,18 +1,6 @@
 @use 'sass:color';
 @use 'sass:math';
 
-/* Bulma */
-@use "~bulma/sass/utilities/_all";
-@use "~bulma/sass/base/_all";
-@use "~bulma/sass/grid/_all";
-@use "~bulma/sass/form/_all";
-@use "~bulma/sass/elements/button";
-@use "~bulma/sass/elements/container";
-@use "~bulma/sass/elements/title";
-@use "~bulma/sass/layout/section";
-@use "~bulma/sass/components/navbar";
-@use "~bulma/sass/components/card";
-
 /* Font Awesome */
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -43,17 +31,6 @@ body {
   flex-direction: column;
 }
 
-// Container styles
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main-content {
-  flex: 1;
-}
-
 .section {
   padding: 5rem 1.5rem;
   background-color: var(--background-white);
@@ -67,28 +44,6 @@ body {
 
 .subtitle {
   color: var(--text-grey);
-}
-
-.has-text-dark {
-  color: var(--text-dark) !important;
-}
-
-.has-text-grey-dark {
-  color: var(--text-grey) !important;
-}
-
-.has-background-light {
-  background-color: var(--background-light) !important;
-}
-
-.has-background-white {
-  background-color: var(--background-white) !important;
-}
-
-.box {
-  border-radius: 8px;
-  background-color: var(--background-white);
-  box-shadow: 0 2px 3px rgba(44, 62, 80, 0.1);
 }
 
 .button {

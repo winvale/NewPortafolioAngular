@@ -59,23 +59,10 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
               "node_modules/bulma/css/bulma.min.css",
-              "node_modules/font-awesome/css/font-awesome.min.css",
-              "node_modules/bulma-carousel/dist/css/bulma-carousel.min.css",
-              "node_modules/@creativebulma/bulma-tooltip/dist/bulma-tooltip.min.css",
-              "node_modules/animate.css/animate.min.css",
-              "node_modules/aos/dist/aos.css"
+              "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/bulma-carousel/dist/js/bulma-carousel.min.js",
-              "node_modules/aos/dist/aos.js"
-            ],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "src/server.ts"
-            },
+            "scripts": [],
             "budgets": [
               {
                 "type": "initial",
@@ -129,16 +116,19 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "edwin-portfolio:build:production"
+              "browserTarget": "edwin-portfolio:build:production"
             },
             "development": {
-              "buildTarget": "edwin-portfolio:build:development"
+              "browserTarget": "edwin-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "edwin-portfolio:build"
+          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -161,18 +151,10 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
               "node_modules/bulma/css/bulma.min.css",
-              "node_modules/font-awesome/css/font-awesome.min.css",
-              "node_modules/bulma-carousel/dist/css/bulma-carousel.min.css",
-              "node_modules/@creativebulma/bulma-tooltip/dist/bulma-tooltip.min.css",
-              "node_modules/animate.css/animate.min.css",
-              "node_modules/aos/dist/aos.css"
+              "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/bulma-carousel/dist/js/bulma-carousel.min.js",
-              "node_modules/aos/dist/aos.js"
-            ]
+            "scripts": []
           }
         }
       }

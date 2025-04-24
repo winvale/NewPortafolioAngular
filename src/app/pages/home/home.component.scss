@@ -1,5 +1,6 @@
-@import '../../../styles.scss';
-@import '../../styles/variables';
+@use 'sass:color';
+@use 'sass:math';
+@import '../../../styles/_variables.scss';
 
 .hero {
   background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(240,240,245,0.95) 100%);
@@ -11,6 +12,8 @@
   
   .hero-body {
     padding: 5rem 1.5rem;
+    display: flex;
+    align-items: center;
   }
   
   .title {
@@ -18,6 +21,7 @@
     line-height: 1.2;
     margin-bottom: 1rem;
     color: $dark-color;
+    font-weight: 700;
     
     @media screen and (max-width: 768px) {
       font-size: 2.5rem;
@@ -42,10 +46,20 @@
   .subtitle {
     color: $dark-color;
     font-weight: 400;
+    color: $grey-color;
     
     @media screen and (max-width: 768px) {
       font-size: 1.75rem;
     }
+  }
+  
+  .content {
+    margin-bottom: 1.5rem;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
   }
   
   .hero-image {
@@ -70,17 +84,17 @@
       color: $white-color;
       
       &:hover {
-        background-color: darken($primary-color, 5%);
+        background-color: darken($primary-color, 10%);
       }
     }
     
     &.is-light {
-      background-color: $white-color;
+      background-color: lighten($light-color, 5%);
       color: $dark-color;
       border: 1px solid $grey-color;
       
       &:hover {
-        background-color: $light-color;
+        background-color: lighten($light-color, 10%);
       }
     }
     
@@ -88,6 +102,23 @@
       &:hover {
         transform: translateY(-3px);
         box-shadow: 0 7px 14px rgba($primary-color, 0.2);
+      }
+    }
+  }
+  
+  .hero-foot {
+    .tabs {
+      ul {
+        li {
+          a {
+            color: $grey-color;
+            transition: color 0.3s ease;
+            
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
       }
     }
   }
