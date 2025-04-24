@@ -1,7 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'sass:color';
+@use 'sass:math';
 
 /* Bulma */
-@import 'bulma/css/bulma.min.css';
+@use "~bulma/sass/utilities/_all";
+@use "~bulma/sass/base/_all";
+@use "~bulma/sass/grid/_all";
+@use "~bulma/sass/form/_all";
+@use "~bulma/sass/elements/button";
+@use "~bulma/sass/elements/container";
+@use "~bulma/sass/elements/title";
+@use "~bulma/sass/layout/section";
+@use "~bulma/sass/components/navbar";
+@use "~bulma/sass/components/card";
 
 /* Font Awesome */
 @import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -18,7 +28,7 @@
   --background-white: #ffffff;
 }
 
-/* Global styles */
+/* Global Styles */
 html {
   scroll-behavior: smooth;
 }
@@ -44,38 +54,19 @@ body {
   flex: 1;
 }
 
-// Animation classes
-.animate-fade-in {
-  animation: fadeIn 1s ease-in-out;
+.section {
+  padding: 5rem 1.5rem;
+  background-color: var(--background-white);
 }
 
-.animate-slide-up {
-  animation: slideUp 0.8s ease-in-out;
+.title {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-dark);
 }
 
-.animate-slide-in-right {
-  animation: slideInRight 0.8s ease-in-out;
-}
-
-// Keyframes
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideUp {
-  from { transform: translateY(50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes slideInRight {
-  from { transform: translateX(50px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-
-// Utility classes
-.text-center {
-  text-align: center;
+.subtitle {
+  color: var(--text-grey);
 }
 
 .has-text-dark {
@@ -94,27 +85,6 @@ body {
   background-color: var(--background-white) !important;
 }
 
-.section {
-  padding: 5rem 1.5rem;
-  background-color: var(--background-white);
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.title {
-  font-weight: 600;
-  line-height: 1.2;
-  color: var(--text-dark);
-}
-
-.subtitle {
-  color: var(--text-grey);
-}
-
 .box {
   border-radius: 8px;
   background-color: var(--background-white);
@@ -130,9 +100,38 @@ body {
     color: var(--background-white);
     
     &:hover {
-      background-color: darken(#3498db, 5%);
+      background-color: color.adjust(#3498db, $lightness: -5%);
     }
   }
+}
+
+/* Animation classes */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-in-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }
 
 /* Animations */
