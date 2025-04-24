@@ -1,30 +1,67 @@
-# Edwin Valencia - Portfolio
+# Edwin Valencia - Ingeniero de Sistemas | Cloud Solutions & Web Development Expert
 
-## Descripción
-Portafolio personal desarrollado con Angular, mostrando proyectos, habilidades y experiencia profesional.
+## Perfil Profesional
 
-## Tecnologías Utilizadas
-- Angular
-- Bulma CSS
-- Firebase Hosting
-- TypeScript
-- SCSS
+Ingeniero de Sistemas con amplia experiencia en desarrollo de soluciones tecnológicas integrales. Especializado en arquitectura de software, infraestructura cloud y desarrollo web de alto rendimiento. Comprometido con la innovación tecnológica y la transformación digital de sistemas empresariales.
 
-## Características
-- Diseño responsivo
-- Secciones de Inicio, Perfil, Proyectos y Experiencia
-- Animaciones con AOS (Animate On Scroll)
-- Integración con Firebase
+## Áreas de Especialización
 
-## Instalación
-1. Clonar el repositorio
-2. Instalar dependencias: `npm install`
-3. Iniciar servidor local: `ng serve`
+### Desarrollo de Software
+- **Lenguajes**: TypeScript, C#, Java, Python
+- **Frameworks**: 
+  - Frontend: Angular, React
+  - Backend: .NET Core, Node.js
+  - Móvil: Ionic, React Native
 
-## Despliegue
-Desplegado automáticamente en Firebase Hosting.
+### Infraestructura y Cloud Computing
+- **Plataformas de Despliegue**: 
+  - AWS (Amazon Web Services)
+  - Firebase
+  - Azure
+  - Google Cloud Platform
+- **Servicios Cloud**:
+  - Computación serverless
+  - Contenedores (Docker, Kubernetes)
+  - Microservicios
+  - Escalabilidad y alta disponibilidad
+
+### Sistemas y Redes
+- Diseño de arquitecturas de red
+- Seguridad informática
+- Administración de sistemas
+- Virtualización
+
+### Bases de Datos
+- SQL Server
+- PostgreSQL
+- MongoDB
+- Firebase Realtime Database
+- Diseño y optimización de bases de datos
+
+### Metodologías
+- Desarrollo Ágil (Scrum, Kanban)
+- DevOps
+- Gestión de proyectos tecnológicos
+- Análisis y diseño de sistemas
+
+## Servicios Profesionales
+
+- Consultoría en Transformación Digital
+- Desarrollo de Aplicaciones Empresariales
+- Migración de Infraestructura a la Nube
+- Optimización de Sistemas
+- Integración de Soluciones Tecnológicas
+
+## Filosofía Profesional
+
+"Crecer es mi estilo". Busco constantemente expandir mis conocimientos, adaptarme a nuevas tecnologías y crear soluciones innovadoras que impulsen la eficiencia y competitividad empresarial.
 
 ## Contacto
-- Email: harledvalencia01@gmail.com
-- LinkedIn: [Edwin Valencia](https://www.linkedin.com/in/edwin-valencia)
-- GitHub: [winvale](https://github.com/winvale)
+
+- **Email**: harledvalencia01@gmail.com
+- **LinkedIn**: [Edwin Valencia](https://www.linkedin.com/in/edwin-valencia)
+- **GitHub**: [winvale](https://github.com/winvale)
+
+---
+
+*Transformando desafíos tecnológicos en oportunidades de crecimiento*

@@ -5,7 +5,11 @@
   "projects": {
     "edwin-portfolio": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -40,19 +44,13 @@
             "budgets": [
               {
                 "type": "initial",
-                "maximumWarning": "4mb",
-                "maximumError": "5mb"
+                "maximumWarning": "500kB",
+                "maximumError": "1MB"
               },
               {
                 "type": "anyComponentStyle",
-                "maximumWarning": "20kb",
-                "maximumError": "50kb"
-              },
-              {
-                "type": "bundle",
-                "name": "bulma",
-                "maximumWarning": "800kb",
-                "maximumError": "1mb"
+                "maximumWarning": "4kB",
+                "maximumError": "8kB"
               }
             ]
           },
@@ -61,19 +59,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "4mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "20kb",
-                  "maximumError": "50kb"
-                },
-                {
-                  "type": "bundle",
-                  "name": "bulma",
-                  "maximumWarning": "800kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
                 }
               ],
               "outputHashing": "all"
@@ -88,12 +80,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "edwin-portfolio:build"
+          },
           "configurations": {
             "production": {
-              "browserTarget": "edwin-portfolio:build:production"
+              "buildTarget": "edwin-portfolio:build:production"
             },
             "development": {
-              "browserTarget": "edwin-portfolio:build:development"
+              "buildTarget": "edwin-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -101,7 +96,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "edwin-portfolio:build"
+            "buildTarget": "edwin-portfolio:build"
           }
         }
       }

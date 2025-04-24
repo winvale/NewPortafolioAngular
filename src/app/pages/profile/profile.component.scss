@@ -1,4 +1,5 @@
-@import '../../../styles.scss';
+@use 'sass:color';
+@use 'sass:math';
 @import '../../styles/variables';
 
 .profile-section {
@@ -108,7 +109,7 @@
       &:hover {
         transform: translateY(-2px);
         box-shadow: $shadow-medium;
-        background-color: darken($primary-color, 5%);
+        background-color: color.adjust($primary-color, $lightness: -5%);
       }
     }
     
