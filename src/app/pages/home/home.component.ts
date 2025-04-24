@@ -1,24 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { ToolsLanguagesComponent } from '../../components/tools-languages/tools-languages.component';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
+  imports: [CommonModule, RouterModule],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
-  imports: [CommonModule, ToolsLanguagesComponent],
-  standalone: true
+  styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
-  
-  constructor(private router: Router) { }
-
-  ngOnInit(): void {
-    // Inicializar animaciones si es necesario
-  }
-
-  navigateTo(route: string): void {
-    this.router.navigate([route]);
-  }
+export class HomeComponent {
+  title = 'Edwin Valencia - Ingeniero de Sistemas';
+  description = 'Experto en soluciones cloud, desarrollo web y transformación digital';
 }
