@@ -21,7 +21,8 @@ export class ProfileComponent implements OnInit {
     { name: 'Node.js', level: 75 },
     { name: 'Express', level: 75 },
     { name: 'MongoDB', level: 70 },
-    { name: 'SQL', level: 75 }
+    { name: 'SQL', level: 75 },
+    {name: 'Java', level: 90}
   ];
 
   constructor() { }
