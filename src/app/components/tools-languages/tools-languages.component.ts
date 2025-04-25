@@ -1,3 +1,4 @@
+// tools-languages.component.ts
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,10 +10,10 @@ interface Technology {
 
 @Component({
   selector: 'app-tools-languages',
-  templateUrl: './tools-languages.component.html',
-  styleUrls: ['./tools-languages.component.scss'],
+  standalone: true,
   imports: [CommonModule],
-  standalone: true
+  templateUrl: './tools-languages.component.html',
+  styleUrls: ['./tools-languages.component.scss']
 })
 export class ToolsLanguagesComponent implements OnInit {
   technologies: Technology[] = [

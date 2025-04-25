@@ -1,6 +1,6 @@
 @use 'sass:color';
 @use 'sass:math';
-@import '../../styles/variables';
+@use '../../styles/variables' as *;
 
 .tools-grid {
   display: grid;

@@ -1,6 +1,6 @@
 @use 'sass:color';
 @use 'sass:math';
-@import '../../../styles/_variables.scss';
+@use '../../../styles/_variables.scss' as *;
 
 .hero {
   background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(240,240,245,0.95) 100%);
@@ -84,17 +84,17 @@
       color: $white-color;
       
       &:hover {
-        background-color: darken($primary-color, 10%);
+        background-color: color.adjust($primary-color, $lightness: -10%);
       }
     }
     
     &.is-light {
-      background-color: lighten($light-color, 5%);
+      background-color: color.adjust($light-color, $lightness: 5%);
       color: $dark-color;
       border: 1px solid $grey-color;
       
       &:hover {
-        background-color: lighten($light-color, 10%);
+        background-color: color.adjust($light-color, $lightness: 10%);
       }
     }
     

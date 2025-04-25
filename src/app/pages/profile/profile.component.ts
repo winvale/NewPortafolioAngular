@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ToolsLanguagesComponent } from '../../components/tools-languages/tools-languages.component';
+
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss'],
-  imports: [CommonModule, ToolsLanguagesComponent],
+  imports: [CommonModule],
   standalone: true
 })
 export class ProfileComponent implements OnInit {

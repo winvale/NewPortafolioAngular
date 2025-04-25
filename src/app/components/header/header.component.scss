@@ -1,6 +1,6 @@
 @use 'sass:color';
 @use 'sass:math';
-@import '../../../styles/_variables.scss';
+@use '../../../styles/_variables.scss' as *;
 
 .navbar {
   transition: all 0.3s ease;
