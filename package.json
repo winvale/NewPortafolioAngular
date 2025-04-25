@@ -2,6 +2,7 @@
   "name": "edwin-portfolio",
   "version": "0.0.0",
   "scripts": {
+    "deploy": "npm run build",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -27,6 +28,7 @@
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "bulma-carousel": "^4.0.24",
+    "edwin-portfolio": "file:",
     "express": "^4.18.2",
     "firebase": "^11.6.0",
     "font-awesome": "^4.7.0",
