@@ -1,0 +1,28 @@
+<section class="experience-section">
+  <h2 class="section-title">Experiencia Laboral</h2>
+  
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let exp of experiences" class="experience-card">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <h3>{{exp.company}}</h3>
+        </mat-panel-title>
+        <mat-panel-description>
+          {{exp.position}} | {{exp.period}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <div class="tech-list">
+        <mat-chip-listbox>
+          <mat-chip *ngFor="let tech of exp.technologies">{{tech}}</mat-chip>
+        </mat-chip-listbox>
+      </div>
+
+      <ul class="responsibilities">
+        <li *ngFor="let responsibility of exp.responsibilities">
+          {{responsibility}}
+        </li>
+      </ul>
+    </mat-expansion-panel>
+  </mat-accordion>
+</section>
