@@ -1,18 +1,28 @@
 .experience-section {
   padding: 2rem;
-  
+  background-color: var(--background-card);
+  border-radius: 15px;
+  border: 1px solid var(--secondary-color);
+
   .section-title {
     color: var(--primary-color);
     margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
   }
 
   .experience-card {
     margin-bottom: 1rem;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    border-radius: 12px;
+    background-color: var(--background-accent);
+    border: 1px solid var(--secondary-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 
     &:hover {
-      transform: translateY(-3px);
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(138, 43, 226, 0.4);
+      border-color: var(--primary-color);
     }
   }
 
@@ -25,6 +35,8 @@
     li {
       margin: 0.5rem 0;
       line-height: 1.6;
+      color: var(--text-light);
+      font-family: 'Roboto', sans-serif;
     }
   }
 }

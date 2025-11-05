@@ -19,39 +19,44 @@
     align-items: center;
     justify-content: center;
     padding: $spacing-medium;
-    background-color: $white-color;
-    border-radius: 8px;
-    box-shadow: $shadow-small;
+    background-color: var(--background-card);
+    border-radius: 15px;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
-    
+
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: $shadow-medium;
-      
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 8px 25px rgba(138, 43, 226, 0.4);
+      border-color: var(--primary-color);
+
       .tool-icon {
-        transform: scale(1.1);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: scale(1.2);
+        text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
       }
     }
-    
+
     .tool-icon {
       font-size: 2.5rem;
-      color: $primary-color;
+      color: var(--primary-color);
       margin-bottom: $spacing-small;
-      
+      transition: all 0.3s ease;
+
       @media screen and (max-width: $mobile) {
         font-size: 2rem;
       }
-      
+
       i {
         font-size: 2rem;
       }
     }
-    
+
     .tool-name {
       font-size: 0.8rem;
-      color: $dark-color;
+      color: var(--text-light);
       text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
     }
   }
 }
