@@ -12,5 +12,5 @@ import { ToolsLanguagesComponent } from '../../components/tools-languages/tools-
 })
 export class HomeComponent {
   title = 'Edwin Valencia - Ingeniero de Sistemas';
-  description = 'Experto en soluciones cloud, desarrollo web y transformación digital';
+  description = 'Experto en soluciones cloud, desarrollo de Software y transformación digital';
 }

@@ -4,6 +4,32 @@
       Proyectos
     </h2>
 
+    <!-- Space Shooter Game -->
+    <div class="game-container mb-6" data-aos="fade-up">
+      <h3 class="title is-4 has-text-centered mb-4">Space Shooter Game</h3>
+      <div class="game-wrapper">
+        <canvas #gameCanvas id="spaceShooterCanvas" width="800" height="400"></canvas>
+        <div class="game-info">
+          <div class="score">Score: <span id="score">0</span></div>
+          <div class="instructions">Usa ↑↓ o Espacio para mover la nave</div>
+        </div>
+        <div class="game-controls">
+          <button id="pauseBtn" class="button is-warning" (click)="togglePause()">
+            <span *ngIf="!gamePaused">⏸️ Pausar</span>
+            <span *ngIf="gamePaused">▶️ Reanudar</span>
+          </button>
+          <button id="restartBtn" class="button is-primary" (click)="restartGame()">Reiniciar Juego</button>
+        </div>
+        <div id="gameOverModal" class="game-over-modal" *ngIf="!gameRunning && score > 0">
+          <div class="modal-content">
+            <h4>¡Juego Terminado!</h4>
+            <p>Puntuación Final: <strong>{{score}}</strong></p>
+            <button class="button is-primary" (click)="restartGame()">Jugar de Nuevo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="columns is-multiline">
       <!-- Proyectos -->
       <div class="column is-4" *ngFor="let project of projects" data-aos="fade-up">
