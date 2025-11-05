@@ -2,7 +2,7 @@
 
 ## Perfil Profesional
 
-Ingeniero de Sistemas con amplia experiencia en desarrollo de soluciones tecnológicas integrales. Especializado en arquitectura de software, infraestructura cloud y desarrollo web de alto rendimiento. Comprometido con la innovación tecnológica y la transformación digital de sistemas empresariales.
+Ingeniero de Sistemas con amplia experiencia en desarrollo de soluciones tecnológicas integrales. Especializado en arquitectura de software, infraestructura cloud y desarrollo de Software de alto rendimiento. Comprometido con la innovación tecnológica y la transformación digital de sistemas empresariales.
 
 ## Áreas de Especialización
 

@@ -1,3 +1,102 @@
+.game-container {
+  text-align: center;
+
+  .game-wrapper {
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--background-card);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    canvas {
+      display: block;
+      background: linear-gradient(to bottom, #000011, #000033);
+      border-radius: 5px;
+    }
+
+    .game-info {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-light);
+      font-family: 'Roboto', sans-serif;
+
+      .score {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+
+      .instructions {
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+    }
+
+    .game-controls {
+      text-align: center;
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+
+      .button {
+        &.is-warning {
+          background-color: var(--secondary-color);
+          border-color: var(--secondary-color);
+          color: var(--background-dark);
+
+          &:hover {
+            background-color: #6c757d;
+            border-color: #6c757d;
+          }
+        }
+      }
+    }
+
+    .game-over-modal {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+
+      .modal-content {
+        background: var(--background-card);
+        padding: 2rem;
+        border-radius: 10px;
+        border: 2px solid var(--primary-color);
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
+        h4 {
+          color: var(--text-light);
+          margin-bottom: 1rem;
+          font-size: 1.5rem;
+        }
+
+        p {
+          color: var(--text-light);
+          margin-bottom: 1.5rem;
+          font-size: 1.1rem;
+
+          strong {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 .projects-section {
   .card {
     height: 100%;
