@@ -1,0 +1,47 @@
+@use '../../../app/shared/styles/mixins' as *;
+
+.profile-section {
+  @include section-padding;
+  background: var(--background-dark);
+  
+  .profile-image img {
+    border: 3px solid white;
+    transition: .3s;
+    &:hover { transform: scale(1.03); }
+  }
+}
+
+.skills-section {
+  @include section-padding;
+  background: linear-gradient(135deg, rgba(26,26,26,.95) 0%, rgba(44,44,44,.95) 100%);
+  
+  .title { color: #fff !important; }
+  
+  .skill-item {
+    margin-bottom: 1rem;
+    .skill-info {
+      display: flex;
+      justify-content: space-between;
+      .skill-name {
+        color: #fff;
+        font-weight: 600;
+      }
+      .skill-percentage {
+        color: #3498db;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.button {
+  border-radius: 25px;
+  transition: .3s;
+  &.is-info {
+    background: var(--primary-color);
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(0,255,255,.3);
+    }
+  }
+}

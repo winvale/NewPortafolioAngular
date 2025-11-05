@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ProfileComponent implements OnInit {
   isButtonEnabled = true;
+  showModal = false;
   skills = [
     { name: 'HTML5', level: 90 },
     { name: 'CSS3/SCSS', level: 85 },
@@ -34,11 +35,28 @@ export class ProfileComponent implements OnInit {
     }, 1000);
   }
 
-  downloadCV(): void {
-    // Lógica para descargar CV
-    const link = document.createElement('a');
-    link.href = 'assets/docs/edwin_valencia_cv.pdf';
-    link.download = 'edwin_valencia_cv.pdf';
-    link.click();
+  showContactModal(): void {
+    this.showModal = true;
+    // Animación de entrada
+    setTimeout(() => {
+      const modal = document.querySelector('.modal-card');
+      if (modal) {
+        modal.classList.add('animate__animated', 'animate__zoomIn');
+      }
+    }, 100);
+  }
+
+  closeModal(): void {
+    // Animación de salida
+    const modal = document.querySelector('.modal-card');
+    if (modal) {
+      modal.classList.remove('animate__zoomIn');
+      modal.classList.add('animate__zoomOut');
+      setTimeout(() => {
+        this.showModal = false;
+      }, 300);
+    } else {
+      this.showModal = false;
+    }
   }
 }

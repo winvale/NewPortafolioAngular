@@ -1,0 +1,12 @@
+// Override Bulma's background classes when needed
+#technologies.section.has-background-white {
+  background: linear-gradient(135deg, rgba(26,26,26,1) 0%, rgba(44,44,44,1) 100%) !important;
+  
+  .title.has-text-dark {
+    color: #ffffff !important;
+  }
+  
+  .subtitle.has-text-grey-dark {
+    color: #e4e6eb !important;
+  }
+}

@@ -72,12 +72,60 @@
 
       <!-- CV Download -->
       <div class="column is-12 has-text-centered mt-6" data-aos="fade-up">
-        <button class="button is-primary is-large" (click)="downloadCV()">
+        <button class="button is-primary is-large" (click)="showContactModal()">
           <span class="icon">
-            <i class="fas fa-download"></i>
+            <i class="fas fa-envelope"></i>
           </span>
           <span>Descargar CV</span>
         </button>
+      </div>
+
+      <!-- Contact Modal -->
+      <div class="modal" [class.is-active]="showModal">
+        <div class="modal-background" (click)="closeModal()"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">
+              <span class="icon mr-2">
+                <i class="fas fa-envelope-open-text"></i>
+              </span>
+              ¡Mejor contactame!
+            </p>
+            <button class="delete" aria-label="close" (click)="closeModal()"></button>
+          </header>
+          <section class="modal-card-body">
+            <div class="has-text-centered">
+              <div class="contact-icon mb-4">
+                <i class="fas fa-handshake fa-3x" style="color: var(--primary-color);"></i>
+              </div>
+              <h3 class="title is-4 mb-4" style="color: var(--text-light);">
+                ¡Hola! 👋
+              </h3>
+              <p class="subtitle mb-5" style="color: var(--text-grey); font-size: 1.1rem; line-height: 1.6;">
+                Prefiero que nos conectemos personalmente para discutir oportunidades laborales.
+                <br><br>
+                Mi CV está actualizado y listo para compartir, pero me encantaría conocerte mejor primero.
+              </p>
+              <div class="contact-options">
+                <a href="mailto:harledvalencia01@gmail.com" class="button is-info is-large mr-3 contact-btn">
+                  <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span>Enviar Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/edwin-valencia-333849226/" target="_blank" class="button is-link is-large contact-btn">
+                  <span class="icon">
+                    <i class="fab fa-linkedin"></i>
+                  </span>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button" (click)="closeModal()">Cerrar</button>
+          </footer>
+        </div>
       </div>
     </div>
   </div>

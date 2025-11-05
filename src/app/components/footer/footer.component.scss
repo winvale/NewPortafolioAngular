@@ -3,8 +3,9 @@
 @use '../../../styles/_variables.scss' as *;
 
 .footer {
-  background-color: $light-color;
+  background-color: var(--background-card);
   padding: 2rem 0;
+  border-top: 1px solid var(--secondary-color);
   
   .footer-content {
     display: flex;
@@ -20,19 +21,22 @@
   .social-links {
     display: flex;
     gap: 1rem;
-    
+
     .icon {
-      color: $dark-color;
-      transition: color 0.3s ease;
-      
+      color: var(--text-grey);
+      transition: all 0.3s ease;
+
       &:hover {
-        color: $primary-color;
+        color: var(--primary-color);
+        transform: scale(1.2);
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
       }
     }
   }
-  
+
   .copyright {
-    color: $grey-color;
+    color: var(--text-grey);
     font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
   }
 }

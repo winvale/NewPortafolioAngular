@@ -1,47 +1,30 @@
-@use 'sass:color';
-@use 'sass:math';
-@use '../../styles/variables' as *;
+@use '../../shared/styles/mixins' as *;
 
 .profile-section {
-  padding: 6rem 1.5rem 4rem;
-  background-color: $white-color;
-  
-  .profile-image {
-    img {
-      border: 5px solid white;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      transition: all 0.5s ease;
-      
-      &:hover {
-        transform: scale(1.03);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-      }
-    }
-  }
+  background: var(--background-dark);
+  padding: 4rem 1.5rem;
+}
+
+.section.skills-section.has-background-light {
+  background: #1a1a1a !important;
+  padding: 4rem 1.5rem;
   
   .title {
-    position: relative;
-    display: inline-block;
-    
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-      width: 50px;
-      height: 3px;
-      background-color: $primary-color;
-    }
+    color: #fff;
   }
+}
+
+
+    
   
   .box {
-    transition: all 0.3s ease;
-    background-color: $white-color;
-    box-shadow: $shadow-small;
-    
+    @include card-base;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: $shadow-medium;
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(138, 43, 226, 0.4);
+      border-color: var(--primary-color);
     }
   }
   
@@ -56,12 +39,12 @@
       flex-direction: column;
       
       h4 {
-        margin-bottom: $spacing-large;
-        color: $dark-color;
+        margin-bottom: 2rem;
+        color: var(--text-light);
       }
       
       .image {
-        margin-bottom: $spacing-large;
+        margin-bottom: 2rem;
         overflow: hidden;
         border-radius: 8px;
         
@@ -77,144 +60,280 @@
       p {
         flex-grow: 1;
         line-height: 1.6;
-        color: $grey-color;
+        color: var(--text-grey);
       }
     }
   }
   
   .table {
     background-color: transparent;
-    
+
     td {
       vertical-align: middle;
       border: none;
-      padding: $spacing-medium;
-      color: $dark-color;
-      
+      padding: 1rem;
+      color: var(--text-light);
+
       &:first-child {
         width: 30%;
-        font-weight: $font-weight-bold;
-        color: $grey-color;
+        font-weight: 600;
+        color: var(--primary-color);
       }
     }
   }
   
-  .button {
-    transition: all 0.3s ease;
-    
-    &.is-info {
-      background-color: $primary-color;
-      color: $white-color;
-      
-      &:hover {
-        transform: translateY(-2px);
-        box-shadow: $shadow-medium;
-        background-color: color.adjust($primary-color, $lightness: -5%);
+
+
+/* Modal Styles */
+.modal {
+  .modal-background {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+  }
+
+  .modal-card {
+    @include card-base;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    margin: 0 auto;
+
+    .modal-card-head {
+      background: linear-gradient(135deg, var(--background-accent), var(--background-card));
+      border-bottom: 1px solid var(--secondary-color);
+      border-radius: 20px 20px 0 0;
+      padding: 1.5rem;
+
+      .modal-card-title {
+        color: var(--text-light);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+
+        .icon {
+          color: var(--primary-color);
+        }
+      }
+
+      .delete {
+        background-color: var(--secondary-color);
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-light);
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: var(--primary-color);
+          transform: scale(1.1);
+        }
+
+        &::before,
+        &::after {
+          background-color: currentColor;
+        }
       }
     }
-    
-    .icon {
-      margin-right: $spacing-small;
+
+    .modal-card-body {
+      padding: 2rem;
+      text-align: center;
+
+      .contact-icon {
+        i {
+          filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+        }
+      }
+
+      .title {
+        color: var(--text-light);
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 1rem;
+      }
+
+      .subtitle {
+        color: var(--text-grey);
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+      }
+
+      .contact-options {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        .contact-btn {
+          transition: all 0.3s ease;
+          border-radius: 25px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+
+          &.is-info {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: var(--background-dark);
+
+            &:hover {
+              background-color: #00e6e6;
+              transform: translateY(-3px);
+              box-shadow: 0 8px 25px rgba(0, 255, 255, 0.4);
+            }
+          }
+
+          &.is-link {
+            background-color: #0077b5;
+            border-color: #0077b5;
+            color: white;
+
+            &:hover {
+              background-color: #005885;
+              transform: translateY(-3px);
+              box-shadow: 0 8px 25px rgba(0, 119, 181, 0.4);
+            }
+          }
+        }
+      }
+    }
+
+    .modal-card-foot {
+      background-color: var(--background-accent);
+      border-top: 1px solid var(--secondary-color);
+      border-radius: 0 0 20px 20px;
+      padding: 1rem 1.5rem;
+
+      .button {
+        background-color: transparent;
+        border: 1px solid var(--secondary-color);
+        color: var(--text-grey);
+        border-radius: 20px;
+        font-family: 'Roboto', sans-serif;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: var(--secondary-color);
+          color: var(--text-light);
+          transform: scale(1.05);
+        }
+      }
     }
   }
 }
 
+
+/* Responsive Modal */
+@media screen and (max-width: 768px) {
+  .modal {
+    .modal-card {
+      margin: 1rem;
+      max-width: none;
+
+      .modal-card-body {
+        padding: 1.5rem;
+
+        .contact-options {
+          flex-direction: column;
+
+          .contact-btn {
+            width: 100%;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 .skills-section {
-  padding: 5rem 1.5rem;
-  
   .skill-item {
-    margin-bottom: 1.5rem;
-    
     .skill-info {
       display: flex;
       justify-content: space-between;
       margin-bottom: 0.5rem;
-      
-      .skill-name {
-        font-weight: 600;
-      }
-      
-      .skill-percentage {
-        color: $primary-color;
-        font-weight: 600;
-      }
     }
     
     .progress-container {
-      height: 8px;
-      background-color: #e9ecef;
-      border-radius: 4px;
+      height: 10px;
+      background-color: var(--background-accent);
+      border-radius: 5px;
       overflow: hidden;
-      
+
       .progress-bar {
         height: 100%;
-        background-color: $primary-color;
-        border-radius: 4px;
-        transition: width 1s ease-in-out;
+        background: var(--primary-color);
+        border-radius: 5px;
+        transition: width 1.5s ease-in-out;
       }
     }
   }
 }
-
 .education-section {
   padding: 5rem 1.5rem;
-  
+  background-color: var(--background-dark);
+
   .timeline {
     position: relative;
     margin: 2rem auto;
     max-width: 700px;
-    
+
     &::before {
       content: '';
       position: absolute;
       top: 0;
       left: 18px;
       height: 100%;
-      width: 2px;
-      background-color: #e9ecef;
+      width: 3px;
+      background: var(--primary-color);
     }
-    
+
     .timeline-item {
       position: relative;
       padding-left: 45px;
       margin-bottom: 2.5rem;
-      
+
       &:last-child {
         margin-bottom: 0;
       }
-      
+
       .timeline-marker {
         position: absolute;
         top: 5px;
         left: 0;
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
-        background-color: $primary-color;
-        border: 3px solid white;
-        box-shadow: 0 0 0 3px rgba($primary-color, 0.2);
+        background-color: var(--primary-color);
+        border: 3px solid var(--background-dark);
       }
-      
+
       .timeline-content {
-        background-color: white;
+        @include card-base;
         padding: 1.5rem;
-        border-radius: 6px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        transition: all 0.3s ease;
-        
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  
         &:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+          transform: translateY(-8px) scale(1.02);
+          box-shadow: 0 15px 35px rgba(138, 43, 226, 0.4);
+          border-color: var(--primary-color);
         }
-        
+
         .heading {
-          color: $primary-color;
+          color: var(--primary-color);
           font-weight: 600;
           margin-bottom: 0.5rem;
         }
-        
+
         .title {
           margin-bottom: 0.5rem;
+          color: var(--text-light);
+          font-family: 'Roboto', sans-serif;
         }
       }
     }
