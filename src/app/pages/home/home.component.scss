@@ -4,6 +4,65 @@
   position: relative;
   border-bottom: 2px solid var(--secondary-color);
 
+  .profile-container {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    
+    .profile-image {
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      border: 4px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s ease;
+      max-width: 350px;
+      margin: 0 auto;
+      
+      img {
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      
+      &:hover {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+        
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    
+    .profile-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      
+      .profile-badge {
+        background: rgba(26, 26, 26, 0.9);
+        padding: 0.5rem 1rem;
+        border-radius: 25px;
+        color: #fff;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        
+        .icon {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+
   &.has-background-light {
     background-color: var(--background-dark);
   }
@@ -78,18 +137,58 @@
     gap: 1rem;
   }
   
-  .hero-image {
+  .profile-container {
+    position: relative;
     text-align: center;
 
-    img {
-      max-width: 90%;
-      filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5)) drop-shadow(0 0 20px rgba(0, 255, 255, 0.2));
-      transition: all 0.5s ease;
-      border-radius: 20px;
+    .profile-image {
+      img {
+        max-width: 90%;
+        filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5)) drop-shadow(0 0 20px rgba(0, 255, 255, 0.2));
+        transition: all 0.5s ease;
+        border-radius: 20px;
+        border: 3px solid var(--primary-color);
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+
+        &:hover {
+          transform: translateY(-10px) scale(1.05);
+          filter: drop-shadow(0 15px 25px rgba(0,0,0,0.7)) drop-shadow(0 0 30px rgba(0, 255, 255, 0.4));
+          box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
+        }
+      }
+    }
+
+    .profile-overlay {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--background-card) 0%, var(--background-accent) 100%);
+      border: 2px solid var(--primary-color);
+      border-radius: 25px;
+      padding: 0.75rem 1.5rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
 
       &:hover {
-        transform: translateY(-10px) scale(1.05);
-        filter: drop-shadow(0 15px 25px rgba(0,0,0,0.7)) drop-shadow(0 0 30px rgba(0, 255, 255, 0.4));
+        transform: translateX(-50%) translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 255, 255, 0.3);
+      }
+
+      .profile-badge {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--text-light);
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+
+        .icon {
+          color: var(--primary-color);
+          font-size: 1.1rem;
+        }
       }
     }
   }
