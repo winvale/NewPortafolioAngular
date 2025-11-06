@@ -1,5 +1,99 @@
+.projects-section {
+  padding: 3rem 0;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+  
+  // Desktop (3 columnas)
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  // Tablet (2 columnas)
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  // Móvil (1 columna)
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.project-card {
+  height: 100%;
+  
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-image {
+      position: relative;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+      
+      &:hover img {
+        transform: scale(1.05);
+      }
+    }
+    
+    .card-content {
+      flex: 1;
+      padding: 1.5rem;
+      
+      .title {
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+      }
+      
+      .content {
+        color: var(--text-secondary);
+      }
+      
+      .tags {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        
+        .tag {
+          background-color: var(--primary-color);
+          color: var(--text-light);
+          padding: 0.5rem 1rem;
+          border-radius: 20px;
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}
+
 .game-container {
   text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 3rem;
 
   .game-wrapper {
     display: inline-block;
@@ -13,15 +107,28 @@
       display: block;
       background: linear-gradient(to bottom, #000011, #000033);
       border-radius: 5px;
+      max-width: 100%;
+      height: auto;
+      
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+      }
     }
 
     .game-info {
       margin-top: 1rem;
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
       align-items: center;
       color: var(--text-light);
       font-family: 'Roboto', sans-serif;
+      
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
 
       .score {
         font-size: 1.2rem;

@@ -2,15 +2,52 @@
 @use 'sass:math';
 @use '../../styles/variables' as *;
 
+.technologies-section {
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+    
+    @media screen and (max-width: $mobile) {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: $spacing-medium;
+  gap: 1.5rem;
   justify-content: center;
+  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 100%;
   
-  @media screen and (max-width: $mobile) {
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    gap: $spacing-small;
+  // Pantallas grandes (desktop)
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(6, minmax(150px, 1fr));
+  }
+  
+  // Tablets
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+  }
+  
+  // Tablets pequeñas
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+  }
+  
+  // Móviles
+  @media screen and (max-width: 480px) {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 1rem;
   }
   
   .tool-item {
@@ -18,12 +55,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: $spacing-medium;
-    background-color: var(--background-card);
-    border-radius: 15px;
-    border: 1px solid var(--secondary-color);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    background-color: var(--background-light);
+    border-radius: 12px;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    aspect-ratio: 1;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    
+    @media screen and (max-width: 480px) {
+      padding: 1rem;
+    }
 
     &:hover {
       transform: translateY(-8px) scale(1.05);
@@ -37,17 +81,36 @@
     }
 
     .tool-icon {
-      font-size: 2.5rem;
       color: var(--primary-color);
-      margin-bottom: $spacing-small;
+      margin-bottom: 0.75rem;
       transition: all 0.3s ease;
-
-      @media screen and (max-width: $mobile) {
+      
+      // Desktop
+      @media screen and (min-width: 1024px) {
+        font-size: 2.5rem;
+      }
+      
+      // Tablet
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        font-size: 2.25rem;
+      }
+      
+      // Móvil
+      @media screen and (max-width: 767px) {
         font-size: 2rem;
       }
-
+      
       i {
-        font-size: 2rem;
+        font-size: inherit;
+      }
+    }
+
+    .tool-name {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-top: 0.5rem;
+      text-align: center;
       }
     }
 

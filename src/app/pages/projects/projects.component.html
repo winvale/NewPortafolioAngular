@@ -30,13 +30,13 @@
       </div>
     </div>
 
-    <div class="columns is-multiline">
+    <div class="projects-grid">
       <!-- Proyectos -->
-      <div class="column is-4" *ngFor="let project of projects" data-aos="fade-up">
+      <div class="project-card" *ngFor="let project of projects" data-aos="fade-up">
         <div class="card">
           <div class="card-image">
             <figure class="image is-16by9">
-              <img [src]="project.image" [alt]="project.title">
+              <img [src]="project.image" [alt]="project.title" loading="lazy">
             </figure>
           </div>
           

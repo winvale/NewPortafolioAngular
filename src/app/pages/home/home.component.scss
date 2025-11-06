@@ -3,7 +3,16 @@
   background: linear-gradient(135deg, rgba(26,26,26,0.95) 0%, rgba(44,44,44,0.95) 100%);
   position: relative;
   border-bottom: 2px solid var(--secondary-color);
+}
 
+.technologies-container {
+  background-color: var(--background-light);
+  padding: 3rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero {
   .profile-container {
     position: relative;
     width: 400px;
